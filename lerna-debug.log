@@ -1,0 +1,204 @@
+0 silly input [ 'publish' ]
+1 silly flags { _: [ 'publish' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   c: true,
+1 silly flags   canary: true }
+2 verbose rootPath C:\Users\Baruch\Desktop\mono-repo
+3 info version 2.11.0
+4 silly isInitialized
+5 silly isInitialized true
+6 silly existsSync C:\Users\Baruch\Desktop\mono-repo\VERSION
+7 info versioning independent
+8 silly initialize attempt
+9 info canary enabled
+10 silly getUpdates
+11 info Checking for updated packages...
+12 silly hasTags
+13 verbose hasTags false
+14 info Comparing with initial commit.
+15 verbose updated apple
+16 verbose updated banana
+17 verbose updated grocery
+18 info Checking for prereleased packages...
+19 silly collectDependents
+20 silly isPackageDependentOf apple apple
+21 silly isPackageDependentOf apple banana
+22 silly isPackageDependentOf apple grocery
+23 silly isPackageDependentOf banana apple
+24 silly isPackageDependentOf banana banana
+25 silly isPackageDependentOf banana grocery
+26 silly isPackageDependentOf grocery apple
+27 verbose dependent grocery depends on apple
+28 silly isPackageDependentOf grocery banana
+29 verbose dependent grocery depends on banana
+30 silly isPackageDependentOf grocery grocery
+31 silly isPackageDependentOf apple grocery
+32 silly isPackageDependentOf banana grocery
+33 silly collectUpdates
+34 verbose has filtered update apple
+35 verbose has filtered update banana
+36 verbose has filtered update grocery
+37 silly getCurrentSHA
+38 verbose getCurrentSHA 6e4a2f873e535daca518923c8f7ee264ea6a6496
+39 silly getCurrentSHA
+40 verbose getCurrentSHA 6e4a2f873e535daca518923c8f7ee264ea6a6496
+41 silly getCurrentSHA
+42 verbose getCurrentSHA 6e4a2f873e535daca518923c8f7ee264ea6a6496
+43 silly initialize success
+44 silly execute attempt
+45 silly runScriptSync preversion undefined
+46 silly runScriptSync preversion apple
+47 silly runScriptSync version apple
+48 silly runScriptSync preversion banana
+49 silly runScriptSync version banana
+50 silly runScriptSync preversion grocery
+51 silly runScriptSync version grocery
+52 silly runScriptSync version undefined
+53 info publish Publishing packages to npm...
+54 silly existsSync C:\Users\Baruch\Desktop\mono-repo\packages\apple\scripts\prepublish.js
+55 verbose execScript No prepublish script found at C:\Users\Baruch\Desktop\mono-repo\packages\apple\scripts\prepublish.js
+56 silly existsSync C:\Users\Baruch\Desktop\mono-repo\packages\banana\scripts\prepublish.js
+57 verbose execScript No prepublish script found at C:\Users\Baruch\Desktop\mono-repo\packages\banana\scripts\prepublish.js
+58 silly existsSync C:\Users\Baruch\Desktop\mono-repo\packages\grocery\scripts\prepublish.js
+59 verbose execScript No prepublish script found at C:\Users\Baruch\Desktop\mono-repo\packages\grocery\scripts\prepublish.js
+60 verbose publishing apple
+61 silly publishTaggedInDir canary apple
+62 silly getExecOpts { cwd: 'C:\\Users\\Baruch\\Desktop\\mono-repo\\packages\\apple' }
+63 verbose publishing banana
+64 silly publishTaggedInDir canary banana
+65 silly getExecOpts { cwd: 'C:\\Users\\Baruch\\Desktop\\mono-repo\\packages\\banana' }
+66 error publish Retrying failed publish: apple
+67 verbose publish error undefined
+68 verbose publishing apple
+69 silly publishTaggedInDir canary apple
+70 silly getExecOpts { cwd: 'C:\\Users\\Baruch\\Desktop\\mono-repo\\packages\\apple' }
+71 error publish Retrying failed publish: banana
+72 verbose publish error undefined
+73 verbose publishing banana
+74 silly publishTaggedInDir canary banana
+75 silly getExecOpts { cwd: 'C:\\Users\\Baruch\\Desktop\\mono-repo\\packages\\banana' }
+76 error publish Retrying failed publish: apple
+77 verbose publish error undefined
+78 verbose publishing apple
+79 silly publishTaggedInDir canary apple
+80 silly getExecOpts { cwd: 'C:\\Users\\Baruch\\Desktop\\mono-repo\\packages\\apple' }
+81 error publish Retrying failed publish: banana
+82 verbose publish error undefined
+83 verbose publishing banana
+84 silly publishTaggedInDir canary banana
+85 silly getExecOpts { cwd: 'C:\\Users\\Baruch\\Desktop\\mono-repo\\packages\\banana' }
+86 error publish Retrying failed publish: apple
+87 verbose publish error undefined
+88 verbose publishing apple
+89 silly publishTaggedInDir canary apple
+90 silly getExecOpts { cwd: 'C:\\Users\\Baruch\\Desktop\\mono-repo\\packages\\apple' }
+91 error publish Retrying failed publish: banana
+92 verbose publish error undefined
+93 verbose publishing banana
+94 silly publishTaggedInDir canary banana
+95 silly getExecOpts { cwd: 'C:\\Users\\Baruch\\Desktop\\mono-repo\\packages\\banana' }
+96 error publish Retrying failed publish: banana
+97 verbose publish error undefined
+98 verbose publishing banana
+99 silly publishTaggedInDir canary banana
+100 silly getExecOpts { cwd: 'C:\\Users\\Baruch\\Desktop\\mono-repo\\packages\\banana' }
+101 error publish Retrying failed publish: apple
+102 verbose publish error undefined
+103 verbose publishing apple
+104 silly publishTaggedInDir canary apple
+105 silly getExecOpts { cwd: 'C:\\Users\\Baruch\\Desktop\\mono-repo\\packages\\apple' }
+106 error publish Ran out of retries while publishing banana Error: Command failed: npm publish --tag canary
+106 error publish npm notice
+106 error publish npm notice package: banana@1.1.0-alpha.6e4a2f87
+106 error publish npm notice === Tarball Contents ===
+106 error publish npm notice 285B package.json
+106 error publish npm notice 86B  index.js
+106 error publish npm notice === Tarball Details ===
+106 error publish npm notice name:          banana
+106 error publish npm notice version:       1.1.0-alpha.6e4a2f87
+106 error publish npm notice package size:  368 B
+106 error publish npm notice unpacked size: 371 B
+106 error publish npm notice shasum:        a7d9edb78e3a8dd1839f6a8293b3e731c266e72e
+106 error publish npm notice integrity:     sha512-a6PA9f3hJY+bq[...]NDwDnB6ey+QbA==
+106 error publish npm notice total files:   2
+106 error publish npm notice
+106 error publish npm ERR! path C:\Users\Baruch\AppData\Local\Temp\npm-28904-4ea24fd7\tmp\fromDir-13f2e06d\package.tgz
+106 error publish npm ERR! code EPERM
+106 error publish npm ERR! errno -4048
+106 error publish npm ERR! syscall unlink
+106 error publish npm ERR! Error: EPERM: operation not permitted, unlink 'C:\Users\Baruch\AppData\Local\Temp\npm-28904-4ea24fd7\tmp\fromDir-13f2e06d\package.tgz'
+106 error publish npm ERR!  { Error: EPERM: operation not permitted, unlink 'C:\Users\Baruch\AppData\Local\Temp\npm-28904-4ea24fd7\tmp\fromDir-13f2e06d\package.tgz'
+106 error publish npm ERR!   cause:
+106 error publish npm ERR!    { Error: EPERM: operation not permitted, unlink 'C:\Users\Baruch\AppData\Local\Temp\npm-28904-4ea24fd7\tmp\fromDir-13f2e06d\package.tgz'
+106 error publish npm ERR!      errno: -4048,
+106 error publish npm ERR!      code: 'EPERM',
+106 error publish npm ERR!      syscall: 'unlink',
+106 error publish npm ERR!      path: 'C:\\Users\\Baruch\\AppData\\Local\\Temp\\npm-28904-4ea24fd7\\tmp\\fromDir-13f2e06d\\package.tgz' },
+106 error publish npm ERR!   isOperational: true,
+106 error publish npm ERR!   stack: 'Error: EPERM: operation not permitted, unlink \'C:\\Users\\Baruch\\AppData\\Local\\Temp\\npm-28904-4ea24fd7\\tmp\\fromDir-13f2e06d\\package.tgz\'',
+106 error publish npm ERR!   errno: -4048,
+106 error publish npm ERR!   code: 'EPERM',
+106 error publish npm ERR!   syscall: 'unlink',
+106 error publish npm ERR!   path: 'C:\\Users\\Baruch\\AppData\\Local\\Temp\\npm-28904-4ea24fd7\\tmp\\fromDir-13f2e06d\\package.tgz' }
+106 error publish npm ERR!
+106 error publish npm ERR! The operation was rejected by your operating system.
+106 error publish npm ERR! It's possible that the file was already in use (by a text editor or antivirus),
+106 error publish npm ERR! or that you lack permissions to access it.
+106 error publish npm ERR!
+106 error publish npm ERR! If you believe this might be a permissions issue, please double-check the
+106 error publish npm ERR! permissions of the file and its containing directories, or try running
+106 error publish npm ERR! the command again as root/Administrator (though this is not recommended).
+106 error publish
+106 error publish npm ERR! A complete log of this run can be found in:
+106 error publish npm ERR!     C:\Users\Baruch\AppData\Roaming\npm-cache\_logs\2018-05-02T20_06_27_561Z-debug.log
+106 error publish
+106 error publish     at Promise.all.then.arr (C:\Users\Baruch\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:236:11)
+106 error publish     at process._tickCallback (internal/process/next_tick.js:178:7)
+107 error execute callback with error
+108 error Error: Command failed: npm publish --tag canary
+108 error npm notice
+108 error npm notice package: banana@1.1.0-alpha.6e4a2f87
+108 error npm notice === Tarball Contents ===
+108 error npm notice 285B package.json
+108 error npm notice 86B  index.js
+108 error npm notice === Tarball Details ===
+108 error npm notice name:          banana
+108 error npm notice version:       1.1.0-alpha.6e4a2f87
+108 error npm notice package size:  368 B
+108 error npm notice unpacked size: 371 B
+108 error npm notice shasum:        a7d9edb78e3a8dd1839f6a8293b3e731c266e72e
+108 error npm notice integrity:     sha512-a6PA9f3hJY+bq[...]NDwDnB6ey+QbA==
+108 error npm notice total files:   2
+108 error npm notice
+108 error npm ERR! path C:\Users\Baruch\AppData\Local\Temp\npm-28904-4ea24fd7\tmp\fromDir-13f2e06d\package.tgz
+108 error npm ERR! code EPERM
+108 error npm ERR! errno -4048
+108 error npm ERR! syscall unlink
+108 error npm ERR! Error: EPERM: operation not permitted, unlink 'C:\Users\Baruch\AppData\Local\Temp\npm-28904-4ea24fd7\tmp\fromDir-13f2e06d\package.tgz'
+108 error npm ERR!  { Error: EPERM: operation not permitted, unlink 'C:\Users\Baruch\AppData\Local\Temp\npm-28904-4ea24fd7\tmp\fromDir-13f2e06d\package.tgz'
+108 error npm ERR!   cause:
+108 error npm ERR!    { Error: EPERM: operation not permitted, unlink 'C:\Users\Baruch\AppData\Local\Temp\npm-28904-4ea24fd7\tmp\fromDir-13f2e06d\package.tgz'
+108 error npm ERR!      errno: -4048,
+108 error npm ERR!      code: 'EPERM',
+108 error npm ERR!      syscall: 'unlink',
+108 error npm ERR!      path: 'C:\\Users\\Baruch\\AppData\\Local\\Temp\\npm-28904-4ea24fd7\\tmp\\fromDir-13f2e06d\\package.tgz' },
+108 error npm ERR!   isOperational: true,
+108 error npm ERR!   stack: 'Error: EPERM: operation not permitted, unlink \'C:\\Users\\Baruch\\AppData\\Local\\Temp\\npm-28904-4ea24fd7\\tmp\\fromDir-13f2e06d\\package.tgz\'',
+108 error npm ERR!   errno: -4048,
+108 error npm ERR!   code: 'EPERM',
+108 error npm ERR!   syscall: 'unlink',
+108 error npm ERR!   path: 'C:\\Users\\Baruch\\AppData\\Local\\Temp\\npm-28904-4ea24fd7\\tmp\\fromDir-13f2e06d\\package.tgz' }
+108 error npm ERR!
+108 error npm ERR! The operation was rejected by your operating system.
+108 error npm ERR! It's possible that the file was already in use (by a text editor or antivirus),
+108 error npm ERR! or that you lack permissions to access it.
+108 error npm ERR!
+108 error npm ERR! If you believe this might be a permissions issue, please double-check the
+108 error npm ERR! permissions of the file and its containing directories, or try running
+108 error npm ERR! the command again as root/Administrator (though this is not recommended).
+108 error
+108 error npm ERR! A complete log of this run can be found in:
+108 error npm ERR!     C:\Users\Baruch\AppData\Roaming\npm-cache\_logs\2018-05-02T20_06_27_561Z-debug.log
+108 error
+108 error     at Promise.all.then.arr (C:\Users\Baruch\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:236:11)
